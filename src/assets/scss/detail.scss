@@ -1,0 +1,31 @@
+@import 'colors';
+@import 'props';
+@import 'common';
+
+.page.detail {
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+    padding:4em;
+
+    box-sizing:border-box;
+}
+.movieCard {
+    @extend .movie-card-style;
+    $width: 600px;
+
+    position:relative;
+    max-width:calc(#{$width} + 12vw);
+    min-height:400px;
+    margin:auto;
+    padding-right:12vw;
+
+    dl.poster {
+        left:$width;
+        margin-left:2vw;
+
+        &:before {
+            height:160px;
+        }
+    }
+}

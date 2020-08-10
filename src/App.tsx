@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Route } from 'react-router-dom';
+import GNB from './components/Navigation';
+import About from './routes/About';
+import MovieList from './routes/MovieList';
+import Detail from './routes/Detail';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <HashRouter>
+            <GNB />
+            <Route path="/" exact={true} component={MovieList} />
+            <Route path="/about" component={About} />
+            <Route path="/movie-detail" component={Detail} />
+        </HashRouter>
+    );
 }
 
 export default App;

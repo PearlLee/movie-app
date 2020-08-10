@@ -1,0 +1,19 @@
+.gnb {
+    display:flex;
+    position:fixed;
+    top:0;
+    max-width:1400px;
+    margin:0 auto;
+
+    &:before {
+        display:block;
+        height:1px;
+        margin-bottom:-1px;
+
+        content:'';
+    }
+
+    h1 {
+        width:250px;
+    }
+}

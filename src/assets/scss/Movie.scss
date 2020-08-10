@@ -1,0 +1,61 @@
+@import 'colors';
+@import 'props';
+@import 'common';
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2em;
+
+    li {
+        display:flex;
+        width: calc(50% - 1em);
+        margin: 2em 0 0;
+
+        box-sizing: border-box;
+
+        &:first-child,
+        &:nth-child(2) {
+            margin-top: 0;
+        }
+
+        a {
+            @extend .movie-card-style;
+
+            display:block;
+            position: relative;
+            min-height:100%;
+
+            &:after {
+                display: block;
+                height: 57vw;
+
+                content: '';
+
+                @media screen and (min-width:1400px) {
+                    height: 800px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:940px) {
+        display: block;
+
+        li {
+            width: auto;
+
+            &:not(:first-child) {
+                margin-top: 2em;
+            }
+
+            &:after {
+                height: 126vw;
+            }
+        }
+    }
+}
