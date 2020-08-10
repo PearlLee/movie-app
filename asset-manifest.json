@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/movie-app/static/css/main.d7c71f90.chunk.css",
+    "main.js": "/movie-app/static/js/main.0c8874d6.chunk.js",
+    "main.js.map": "/movie-app/static/js/main.0c8874d6.chunk.js.map",
+    "runtime-main.js": "/movie-app/static/js/runtime-main.1fbae34b.js",
+    "runtime-main.js.map": "/movie-app/static/js/runtime-main.1fbae34b.js.map",
+    "static/js/2.e0e84a28.chunk.js": "/movie-app/static/js/2.e0e84a28.chunk.js",
+    "static/js/2.e0e84a28.chunk.js.map": "/movie-app/static/js/2.e0e84a28.chunk.js.map",
+    "index.html": "/movie-app/index.html",
+    "precache-manifest.79f42fc983528e788d4131f9f0d0c800.js": "/movie-app/precache-manifest.79f42fc983528e788d4131f9f0d0c800.js",
+    "service-worker.js": "/movie-app/service-worker.js",
+    "static/css/main.d7c71f90.chunk.css.map": "/movie-app/static/css/main.d7c71f90.chunk.css.map",
+    "static/js/2.e0e84a28.chunk.js.LICENSE.txt": "/movie-app/static/js/2.e0e84a28.chunk.js.LICENSE.txt",
+    "static/media/star.c25c1013.svg": "/movie-app/static/media/star.c25c1013.svg",
+    "static/media/star_border.db39a923.svg": "/movie-app/static/media/star_border.db39a923.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fbae34b.js",
+    "static/js/2.e0e84a28.chunk.js",
+    "static/css/main.d7c71f90.chunk.css",
+    "static/js/main.0c8874d6.chunk.js"
+  ]
+}
